@@ -3862,3 +3862,39 @@ section[id] {
     transform: none;
   }
 }
+
+/* 唐七七项目：演示视频 */
+.demo-video {
+  margin-top: 26px;
+  border: 1px solid var(--line-strong);
+  background: #0c0e0f;
+}
+
+.demo-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 848 / 480;
+  object-fit: contain;
+  background: #0c0e0f;
+}
+
+.demo-video figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  font-family: var(--mono);
+  font-size: 7.5px;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .demo-video figcaption {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
