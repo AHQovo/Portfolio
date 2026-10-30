@@ -19,9 +19,11 @@
 - `work/dormiveglia.html`：《悬浮之境 DORMIVEGLIA》案例
 - `work/tangqiqi.html`：《加油，唐七七！》案例
 - `work/alien.html`：《外星人入侵游戏》案例
+- `work/arpg.html`：ARPG 游戏「跑商系统」案例与策划文档入口
 - `assets/css/site.css`：整站样式、响应式布局与动画
 - `assets/js/site.js`：移动端菜单、滚动动效、邮箱复制与图片灯箱
 - `assets/img/`：证件照与游戏截图
+- `assets/docs/`：可公开下载的项目策划文档
 
 ## 部署
 
