@@ -3391,6 +3391,78 @@ section[id] {
   color: var(--muted);
 }
 
+.arpg-work-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin-bottom: 22px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.arpg-work-pillar {
+  min-height: 190px;
+  padding: 17px;
+  background: var(--surface);
+}
+
+.arpg-work-pillar > span {
+  font-family: var(--mono);
+  font-size: 6.5px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.arpg-work-pillar h3 {
+  margin: 42px 0 10px;
+  font-family: var(--display);
+  font-size: clamp(17px, 1.8vw, 22px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.arpg-work-pillar p {
+  font-family: var(--mono);
+  font-size: 6.8px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+.arpg-trade-layers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.arpg-trade-layers div {
+  padding: 16px;
+  border: 1px solid var(--line);
+}
+
+.arpg-trade-layers span,
+.arpg-trade-layers small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 6.2px;
+  line-height: 1.55;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.arpg-trade-layers span {
+  color: var(--accent);
+}
+
+.arpg-trade-layers strong {
+  display: block;
+  margin: 16px 0 6px;
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .project-document-card {
   margin-top: 34px;
   border: 1px solid var(--line-strong);
@@ -4278,6 +4350,10 @@ section[id] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .arpg-work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .trade-step:nth-child(2)::after {
     display: none;
   }
@@ -4286,6 +4362,12 @@ section[id] {
 @media (max-width: 760px) {
   .arpg-cover-title {
     font-size: 32px;
+  }
+
+  .design-board-arpg .board-head {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
   .arpg-node {
@@ -4319,6 +4401,19 @@ section[id] {
 
   .trade-market-grid {
     grid-template-columns: 1fr;
+  }
+
+  .arpg-work-grid,
+  .arpg-trade-layers {
+    grid-template-columns: 1fr;
+  }
+
+  .arpg-work-pillar {
+    min-height: 0;
+  }
+
+  .arpg-work-pillar h3 {
+    margin-top: 22px;
   }
 
   .trade-stats {
